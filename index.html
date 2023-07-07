@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form validation</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<form action="thank-you.html" id="form">
+			<div class="errors">
+				<h2 class="error-title">Error</h2>
+				<ul class="errors-list"></ul>
+			</div>
+
+			<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" />
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" />
+			</div>
+			<div class="form-group">
+				<label for="username">Password confirmation:</label>
+				<input
+					type="password"
+					id="pass-confirmation"
+					name="pass-confirmation"
+				/>
+			</div>
+			<div class="agree">
+				<input type="checkbox" name="agree" id="agree" />
+				<label for="agree">Agree to terms?</label>
+			</div>
+			<button type="submit" id="submit">Create Account</button>
+		</form>
+	</body>
+</html>
